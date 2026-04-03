@@ -145,9 +145,9 @@
 
 <body>
     <div class="container">
-        <h1>貸款精算助手</h1>
+        <h1>貸款精算助手
         <span class="subtitle">輸入條件,快速分析您的還款計畫</span>
-        <hr>
+        </h1>
         <form id="loanForm" action="" class="loan-form">
             <div class="form-row">
                 <label for="amount">貸款金額</label>
@@ -253,6 +253,35 @@
             </table>
         </div>
     </div>
+
+    <script>
+        const title=document.querySelector("h1");
+        console.log(title);
+
+        title.style.color="orange";
+        
+        //修改內容 
+        // 1.只改文字
+        title.innerText="超級助手!";
+        //修改內容 
+        // 2.含標籤語法
+        title.innerHTML="<b style='background-color:blue'>超級助手!</b>";
+
+        const amount = document.querySelector("#amount");
+        const rate = document.querySelector("#rate");
+        const loanYears = document.querySelector("#loanYears");
+        console.log(amount,rate,loanYears);
+
+
+
+
+
+    </script>
+
+
+
+
+
 </body>
 
 </html>
